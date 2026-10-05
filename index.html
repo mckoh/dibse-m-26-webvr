@@ -1,5 +1,6 @@
 <html>
     <head>
+
         <title>A-Frame Demo Application</title>
 
         <!-- This is where we load the framework -->
@@ -14,6 +15,35 @@
 
         <!-- This is were the magic happens -->
         <a-scene>
+
+            <a-assets>
+                <img src="assets/panorama/skybox.jpeg" id="sky">
+            </a-assets>
+
+            <a-sky src="#sky"></a-sky>
+
+            <!-- Blaue Box -->
+            <a-box position="2.2 2d -9"
+                rotation="0 0 0"
+                color="#000AAA"
+                width="4"
+                height="4"
+                depth="4"
+                side="double"
+            ></a-box>
+
+            <!-- Gelbe Box -->
+            <a-box position="-2.2 2 -9"
+                rotation="0 0 0"
+                color="#AAA000"
+                width="4"
+                height="4"
+                depth="4"
+            ></a-box>
+
+            <a-plane rotation="-90 0 0"
+                     scale="10000 10000"
+            ></a-plane>
 
         </a-scene>
 
